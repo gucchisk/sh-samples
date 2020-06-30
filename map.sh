@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+#
+# for macOS
+#
 
 declare -A MAP;
 

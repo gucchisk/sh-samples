@@ -1,4 +1,17 @@
 #!/bin/bash
+#
+# for centos7
+#
+
+echo "[openresty]
+name=Official OpenResty Open Source Repository for CentOS
+baseurl=https://openresty.org/package/centos/$releasever/$basearch
+skip_if_unavailable=False
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=https://openresty.org/package/pubkey.gpg
+enabled=1
+enabled_metadata=1" > /etc/yum.repos.d/openresty.repo
 
 declare -a packages=(
     "openresty-1.15.8.3-1.el7.x86_64"
